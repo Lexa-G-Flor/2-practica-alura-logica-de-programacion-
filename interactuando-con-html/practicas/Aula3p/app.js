@@ -14,9 +14,10 @@ return;
 
 //APUNTES - 
 
-/*  1. let numeroDeUsuario = document.querySelector ('input')
+/*  1. Cambio de nombre de la funcion y verificacion en index.html
+
+let numeroDeUsuario = document.querySelector ('input')
  
-- Función para mostrar un mensaje de alerta
 - Se cambia el nombre intentoUsurio por verificarIntento
 - Recordar cambiar tambien donde se llama la funcion en index.html
 - etiqueta input representa la caja de texto. Se encuentra en index.html
@@ -30,7 +31,9 @@ function verificarIntento () {
 
 */
 
-/* 2. let numeroDeUsuario = document.getElementById ('valorUsuario').value;
+/* 2. cambio del DOC y asignacion de id, del value
+
+let numeroDeUsuario = document.getElementById ('valorUsuario').value;
 
 - Pero cuando hay mas de un input se les asigna un id o nombre para buscarla
 - Donde se utiliza document.getElementById ('id');
@@ -46,16 +49,19 @@ function verificarIntento () {
 
 */
 
-/* 3. console.log (typeof(numeroDeUsuario)); y uso de parseInt()
- 
-- Muestra el valor de la variable en la consola del navegador.
-
-- Verificacion el tipo de dato, si numeroDeUsuario es un string o un número.
+/* 3. - Verificacion el tipo de dato, si numeroDeUsuario es un string o un número.
         -Si es un string, puedes usar parseInt() en la variable 
          para convertirlo a un número antes de realizar operaciones matemáticas.
 
         let numeroDeUsuario = parseInt (document.getElementById ('valorUsuario').value);
+*/
 
+/* 4. Comparar valores y verificar tipo de dato
+
+console.log (typeof(numeroDeUsuario));
+console.log (typeof(numeroSecreto));
+
+- Muestra el valor de la variable en la consola del navegador.
 - Se compara los dos numeros retornando un booleano o true - false (tipo de dato booleano == )
 - Los tipos de datos booleanos son como interruptores que solo pueden estar en dos estados: verdadero o falso.
 - Y se utiliza el === para que sea igual en tipo y en valor  
