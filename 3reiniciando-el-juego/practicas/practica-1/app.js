@@ -4,6 +4,9 @@ lo guarda en la variable numeroSecreto.*/
 let numeroSecreto = generarNumeroSecreto();
 
 
+//Agregado
+let intentos = 1;
+console.log (numeroSecreto); 
 
 // Función para asignar texto a un elemento HTML
 function asignarTextoElemento (elemento, texto) {
@@ -17,9 +20,13 @@ function verificarIntento () {
     let numeroDeUsuario = parseInt (document.getElementById ('valorUsuario').value);
 
     console.log (numeroSecreto); 
+    console.log (intentos);
 
     if (numeroDeUsuario === numeroSecreto) {
-        asignarTextoElemento ('p', 'Acertaste el numero');
+
+        //Agregado; RESUMEN del if / else
+        asignarTextoElemento('p', `Acertaste el numero en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+
     } else { 
         if(numeroDeUsuario > numeroSecreto){
         asignarTextoElemento ('p', 'El numero secreto es menor');
@@ -27,7 +34,10 @@ function verificarIntento () {
         asignarTextoElemento ('p', 'El numero secreto es mayor');
         }
     }
- 
+    
+    //agregado
+    intentos ++;
+
     }
     
 
